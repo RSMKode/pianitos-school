@@ -98,8 +98,16 @@ header nav a.accent:is(:hover,:focus) {
   height:8rem;
   position: absolute;
   bottom: 0;
-  z-index:1;
   background: linear-gradient(to left top, white 0%, white 50%, transparent 50.5%, transparent 100%);
+}
+
+.presentacion {
+  position: relative;
+}
+
+.horarios {
+  top: -5rem;
+  z-index: 3;
 }
 
 .carousel-inner {
