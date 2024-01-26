@@ -98,8 +98,55 @@ header nav a.accent:is(:hover,:focus) {
   height:8rem;
   position: absolute;
   bottom: 0;
-  z-index:1;
   background: linear-gradient(to left top, white 0%, white 50%, transparent 50.5%, transparent 100%);
+}
+
+.presentacion {
+  position: relative;
+}
+
+.horarios {
+  width: 65%;
+  border: none;
+  border-radius: 1rem;
+  top: -5rem;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.26);
+}
+
+.horarios .btn-primary {
+  border: none;
+  color: black;
+  background-color: white;
+  font-family: 'Righteous', sans-serif;
+  transition: .25s all ease;
+}
+
+.horarios .btn-primary:is(:hover,:focus) {
+  scale: 1.1;
+}
+
+.card-header {
+  font-family: 'Righteous', sans-serif;
+  background-color: #D31F3F;
+  color: white;
+  padding: 1rem;
+}
+
+.card-header:first-child {
+  border-top-left-radius: .9rem;
+  border-top-right-radius: .9rem;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: start;
+  gap: 2rem;
+}
+
+.card-body svg {
+  transform: rotate(90deg);
 }
 
 .carousel-inner {
