@@ -15,6 +15,8 @@
 
 body {
   min-height: 200dvh;
+  /* overflow-x: hidden;
+  max-width: 100dvw; */
 }
 
 .contenedor {
@@ -89,10 +91,15 @@ header a.accent {
 
 /*----------------------HERO-----------------------*/
 
+.section {
+  max-width: 100%;
+}
+
 .hero {
   position: relative;
 }
 .hero img {
+  padding: 0;
   width: 100%;
   height: 26rem;
   object-fit: cover;
@@ -187,6 +194,9 @@ h2 {
   width: 100%;
 }
 
+.aprende-piano {
+  max-width: 18rem;
+}
 .niveles {
   font-weight: 400;
   max-width: 18rem;
@@ -210,10 +220,6 @@ hr.accent {
   background-color: var(--acent);
 }
 
-.aprende-piano {
-  max-width: 18rem;
-}
-
 .presentacion h3 {
   text-align: start;
 }
@@ -222,12 +228,9 @@ hr.accent {
   font-size: 5.5rem;
 }
 
-.pianitos-school {
-  margin-bottom: 3rem;
-}
-
 .divisor-presentacion {
-  width: 100%;
+  top: -8rem;
+  left: 0;
   height: 8rem;
   background: linear-gradient(
     to right top,
@@ -242,6 +245,7 @@ hr.accent {
 
 .cursos {
   background-color: #d31f3f;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -250,7 +254,6 @@ hr.accent {
 
 .divisor-cursos {
   top: -5rem;
-  width: 100%;
   height: 8rem;
   bottom: 0;
   background: linear-gradient(
