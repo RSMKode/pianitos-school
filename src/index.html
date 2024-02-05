@@ -19,8 +19,8 @@
     <header>
       <h1>Pianitos<span class="accent">School</span></h1>
       <nav>
-        <a href="">Cursos</a><a href="">Profesores</a><a href="">FAQS</a
-        ><a href="" class="accent">Iniciar Sesion</a>
+        <a href="#cursos">Cursos</a><a href="#profesores">Profesores</a>
+        <a href="" class="accent">Iniciar Sesion</a>
       </nav>
     </header>
     <main class="container-fluid">
@@ -97,7 +97,7 @@
             class="col col-12 col-lg-6 flex flex-column px-4"
           >
               <h2 class="pianitos-school text-center">
-                Pianitos<span class="accent">School</span>
+                Pianitos <span class="accent">School</span>
               </h2>
               <p>
                 Se trabajan todo tipo de estilos (Rock, metal, pop, clásico,
@@ -132,7 +132,8 @@
         </div>
       </section>
       <div class="row divisor-presentacion"></div>
-      <section class="cursos row">
+      <section id="cursos" class="cursos row">
+        <h2 class="text-center">CURSOS</h2>
         <div class="col p-0 contenedor">
           <div class="card">
             <img src="./images/pianito-1.jpg" class="card-img-top" alt="...">
@@ -155,12 +156,31 @@
         </div>
       </section>
       <div class="row divisor-cursos"></div>
-      <section class="profesores row">
-        <div class="col d-flex flex-column align-items-center p-4 gap-4">
+      <section id="profesores" class="profesores row p-4">
+        <h2 class="text-center">PROFESORES</h2>
+        <div class="col d-flex flex-column align-items-center p-4 gap-5">
           <article class="row justify-content-center gap-2">
-            <img src="images/hero-background.png" alt="Profesor 1" class="prof_avatar col col-12 col-sm-6 px-0">
-            <div class="col col-12 col-sm-6 d-flex flex-column align-items-start">
+            <img src="images/prof-1.png" alt="Profesor 1" class="prof_avatar col col-12 col-sm-6 px-0">
+            <div class="col col-12 col-sm-6 d-flex flex-column align-items-start justify-content-center">
               <h3>Roger</h3>
+              <p>Licenciado en piano por el Conservatorio José Iturbi, realiza sus estudios superiores entre Valencia y Barcelona..
+                  Más tarde desarrolla sus estudios de piano y armonía en la especialidad</p>
+                <button type="button" class="btn btn-primary">Ver más</button>
+            </div>
+          </article>
+          <article class="row justify-content-center gap-2">
+            <img src="images/prof-2.png" alt="Profesor 1" class="prof_avatar col col-12 col-sm-6 px-0">
+            <div class="col col-12 col-sm-6 d-flex flex-column align-items-start justify-content-center">
+              <h3>Samuel</h3>
+              <p>Licenciado en piano por el Conservatorio José Iturbi, realiza sus estudios superiores entre Valencia y Barcelona..
+                  Más tarde desarrolla sus estudios de piano y armonía en la especialidad</p>
+                <button type="button" class="btn btn-primary">Ver más</button>
+            </div>
+          </article>
+          <article class="row justify-content-center gap-2">
+            <img src="images/prof-3.png" alt="Profesor 1" class="prof_avatar col col-12 col-sm-6 px-0">
+            <div class="col col-12 col-sm-6 d-flex flex-column align-items-start justify-content-center">
+              <h3>Jonathan</h3>
               <p>Licenciado en piano por el Conservatorio José Iturbi, realiza sus estudios superiores entre Valencia y Barcelona..
                   Más tarde desarrolla sus estudios de piano y armonía en la especialidad</p>
                 <button type="button" class="btn btn-primary">Ver más</button>

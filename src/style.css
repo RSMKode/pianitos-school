@@ -229,7 +229,7 @@ hr.accent {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
 }
 
-.btn:hover {
+.btn:is(:hover, :focus) {
   background-color: white;
   border: 2px solid var(--acent);
   color: var(--acent);
@@ -256,6 +256,10 @@ hr.accent {
   flex-direction: column;
   gap: 2rem;
   position: relative;
+}
+
+.cursos h2 {
+  color: white;
 }
 
 .divisor-cursos {
@@ -292,6 +296,11 @@ hr.accent {
 }
 
 /*----------------------PROFESORES-----------------------*/
+
+.profesores h2 {
+  color: var(--acent);
+}
+
 .divisor-profesores {
   height: 8rem;
   bottom: 0;
@@ -313,8 +322,8 @@ hr.accent {
 }
 
 img.prof_avatar {
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -337,6 +346,6 @@ footer .btn {
   background: transparent;
 }
 
-footer .btn:hover {
+footer .btn:is(:hover, :focus) {
   border: 2px solid white;
 }
