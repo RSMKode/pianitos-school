@@ -27,7 +27,7 @@ body {
 
 header {
   display: flex;
-  gap: 1rem;
+  gap: 0 1rem;
   flex-wrap: wrap;
   place-content: space-between;
   place-items: center;
@@ -137,25 +137,20 @@ h2 {
 }
 
 .horarios {
-  max-width: 55rem;
+  width: 20rem;
   border: none;
   border-radius: 1rem;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.26);
 }
 
-.horarios .btn-primary {
+.horarios .btn {
   border: none;
-  color: black;
+  color: var(--acent);
   background-color: transparent;
   font-family: "Righteous", sans-serif;
-  transition: 0.25s all ease;
-  padding: 0;
+  box-shadow: none;
+  border: 2px solid transparent;
 }
-
-.horarios .btn-primary:is(:hover, :focus) {
-  scale: 1.1;
-}
-
 .info-cursos .card-header {
   font-family: "Righteous", sans-serif;
   background-color: #d31f3f;
@@ -171,9 +166,9 @@ h2 {
 .info-cursos .card-body {
   display: flex;
   place-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: start;
-  gap: 2rem;
+  /* gap: 1rem; */
 }
 
 .info-cursos .card-body svg {
@@ -228,8 +223,19 @@ hr.accent {
   font-size: 5.5rem;
 }
 
+.btn {
+  background-color: var(--acent);
+  border: 2px solid var(--acent);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.486);
+}
+
+.btn:hover {
+  background-color: white;
+  border: 2px solid var(--acent);
+  color: var(--acent);
+}
+
 .divisor-presentacion {
-  top: -8rem;
   left: 0;
   height: 8rem;
   background: linear-gradient(
@@ -253,7 +259,6 @@ hr.accent {
 }
 
 .divisor-cursos {
-  top: -5rem;
   height: 8rem;
   bottom: 0;
   background: linear-gradient(
@@ -264,7 +269,6 @@ hr.accent {
     transparent 100%
   );
 }
-
 .cursos .contenedor {
   padding: 3rem;
   display: flex;
@@ -285,4 +289,54 @@ hr.accent {
 
 .cursos img {
   border-radius: 0.5rem;
+}
+
+/*----------------------PROFESORES-----------------------*/
+.divisor-profesores {
+  height: 8rem;
+  bottom: 0;
+  background: linear-gradient(
+    to right top,
+    var(--acent) 0%,
+    var(--acent) 50%,
+    transparent 50.5%,
+    transparent 100%
+  );
+}
+
+.profesor {
+  max-width: 50rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0.5rem 1rem;
+  align-items: center;
+}
+
+img.prof_avatar {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #d31f3f;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  place-items: center;
+  font-family: "Righteous", sans-serif;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 5px black;
+}
+
+footer .btn {
+  border: 2px solid white;
+  background: transparent;
+}
+
+footer .btn:hover {
+  border: 2px solid white;
 }

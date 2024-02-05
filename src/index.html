@@ -35,7 +35,8 @@
             <div class="info-cursos">
               <div class="horarios card">
                 <h5 class="card-header">Horarios</h5>
-                <div class="card-body">
+                <div class="card-body gap-2 gap-lg-4">
+                  <div class="d-flex flex-column align-items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="icon icon-tabler icon-tabler-piano"
@@ -57,21 +58,23 @@
                     <path d="M15 19v-6" />
                     <path d="M14 5v8h2v-8" />
                   </svg>
-                  <div>
+                  <a href="#" class="btn btn-primary">Consultar</a>
+                </div>
+                  <div class="">
                     <h5 class="card-title">Lunes - Viernes</h5>
                     <p class="card-text">
                       Clases particulares <br />
                       y grupos
                     </p>
                   </div>
-                  <a href="#" class="btn btn-primary">Consultar</a>
+                  
                 </div>
               </div>
               <div class="d-flex flex-column gap-5 align-items-center align-items-md-start">
                 <div class="aprende-piano">
                   <h3>
                     Aprende a tocar el <br />
-                    <span class="piano accent">Piano</span>
+                    <span class="piano accent">PIANO</span>
                   </h3>
                   <hr />
                   <p>
@@ -91,7 +94,7 @@
             </div>
           </aside>
           <div
-            class="col col-12 col-lg-6 flex flex-column"
+            class="col col-12 col-lg-6 flex flex-column px-4"
           >
               <h2 class="pianitos-school text-center">
                 Pianitos<span class="accent">School</span>
@@ -152,7 +155,42 @@
         </div>
       </section>
       <div class="row divisor-cursos"></div>
+      <section class="profesores row">
+        <div class="col d-flex flex-column align-items-center p-4 gap-4">
+          <article class="row justify-content-center gap-2">
+            <img src="images/hero-background.png" alt="Profesor 1" class="prof_avatar col col-12 col-sm-6 px-0">
+            <div class="col col-12 col-sm-6 d-flex flex-column align-items-start">
+              <h3>Roger</h3>
+              <p>Licenciado en piano por el Conservatorio José Iturbi, realiza sus estudios superiores entre Valencia y Barcelona..
+                  Más tarde desarrolla sus estudios de piano y armonía en la especialidad</p>
+                <button type="button" class="btn btn-primary">Ver más</button>
+            </div>
+          </article>
+          
+          
+        </div>
+      </section>
+      <div class="row divisor-profesores"></div>
     </main>
+    <footer>
+      <form class="row g-3">
+        <div class="col-12">
+          <label for="nombre" class="form-label">Nombre y Apellidos</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Pepito Pérez">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="pepe@gmail.com">
+        </div>
+        <div class="col-md-6">
+          <label for="tel" class="form-label">Teléfono</label>
+          <input type="tel" placeholder="Teléfono" class="form-control" id="tel">
+        </div>
+        <div class="col-md-6">
+          <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </div>
+      </form>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
