@@ -249,6 +249,27 @@ hr.accent {
 }
 /*----------------------CURSOS-----------------------*/
 
+.cursos .card-title {
+  font-family: "Righteous", sans-serif;
+  font-size: 2rem;
+  color: var(--acent);
+  text-align: center;
+  margin: 0;
+}
+
+.cursos img {
+  height: 100%;
+}
+.cursos .carousel-inner {
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.cursos .carousel-item {
+  height: 100%;
+}
+
 .cursos {
   background-color: #d31f3f;
   padding: 2rem;
@@ -289,10 +310,6 @@ hr.accent {
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.26);
   justify-content: space-evenly;
   align-items: center;
-}
-
-.cursos img {
-  border-radius: 0.5rem;
 }
 
 /*----------------------PROFESORES-----------------------*/
